@@ -10,7 +10,7 @@ $perspective: 300;
 }
 
 .parallax_wrapper {
-  height: 100vh;
+  height: 101vh; // Gets stuck on mobile with 100vh idk why
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 300px;
@@ -90,15 +90,15 @@ $perspective: 300;
 
 .main {
   min-height: 100vh;
-  
+
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     .text_container {
       width: 80vw;
       margin-block: 50px;
+      padding-bottom: 50px;
     }
   }
 }
