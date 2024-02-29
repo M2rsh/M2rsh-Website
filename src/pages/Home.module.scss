@@ -9,8 +9,12 @@ $perspective: 300;
   flex-direction: column;
 }
 
+:root {
+  overflow-y: hidden;
+}
+
 .parallax_wrapper {
-  height: 101vh; // Gets stuck on mobile with 100vh idk why
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 300px;
@@ -19,7 +23,8 @@ $perspective: 300;
     position: relative;
     transform-style: preserve-3d;
     height: 100vh;
-
+    width: 100vw;
+    
     .parallax_layer {
       position: absolute;
       inset: 0;
@@ -90,7 +95,7 @@ $perspective: 300;
 
 .main {
   min-height: 100vh;
-
+  
   .container {
     display: flex;
     flex-direction: column;

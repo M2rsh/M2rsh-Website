@@ -14,7 +14,6 @@
   color: #e0def4;
   background-color: #191724;
   
-  height: 100%;
   overflow-x: hidden;
 }
 
@@ -25,4 +24,21 @@
 
 .icon {
   font-family: SymbolsNerdFontMono;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #191724;
+  border-left: 1px #1f1d2e solid;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #524f67;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #403d52;
 }
