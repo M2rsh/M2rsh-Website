@@ -1,0 +1,102 @@
+// scale = 1-(z translate / perspective)
+
+$perspective: 300;
+
+@mixin align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parallax_wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+
+  .parallax_group {
+    position: relative;
+    transform-style: preserve-3d;
+    height: 100vh;
+
+    .parallax_layer {
+      position: absolute;
+      inset: 0;
+      height: 95vh;
+    }
+
+    #layer1 {
+      background-color: #1f1d2e;
+      transform: translateZ(180px) scale(calc(1 - (180 / $perspective)));
+      @include align-center;
+      z-index: 6;
+      padding-top: 30px;
+
+      .smoltext {
+        font-size: 0.85em;
+        color: #6e6a86;
+      }
+
+      .link {
+        font-family: SymbolsNerdFontMono;
+        font-size: 2em;
+        margin-top: 1.5em;
+        cursor: pointer;
+
+        &:hover {
+          color: #c4a7e7;
+        }
+      }
+    }
+
+    #layer2 {
+      background-color: #eb6f92;
+      transform: translateZ(145px) scale(calc(1 - (145 / $perspective)));
+      z-index: 5;
+    }
+
+    #layer3 {
+      background-color: #b4637a;
+      transform: translateZ(120px) scale(calc(1 - (120 / $perspective)));
+      z-index: 4;
+    }
+
+    #layer4 {
+      background-color: #ea9a97;
+      transform: translateZ(95px) scale(calc(1 - (95 / $perspective)));
+      z-index: 3;
+    }
+    
+    #layer5 {
+      background-color: #f6c177;
+      transform: translateZ(70px) scale(calc(1 - (70 / $perspective)));
+      z-index: 2;
+    }
+
+    #layer6 {
+      background-color: #286983;
+      transform: translateZ(45px) scale(calc(1 - (45 / $perspective)));
+      z-index: 1;
+    }
+
+    #layer7 {
+      background-color: #907aa9;
+      transform: translateZ(20px) scale(calc(1 - (20 / $perspective)));
+      z-index: 0;
+    }
+  }
+}
+
+.main {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text_container {
+      width: 80vw;
+      margin-block: 50px;
+    }
+  }
+}
