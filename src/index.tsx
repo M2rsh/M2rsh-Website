@@ -1,16 +1,18 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import NoPage from "./pages/NotFound";
+import { lazy } from 'react';
 
 import './index.scss';
+
+const HomeLazy = lazy(() => import("./pages/Home"));
+const NotFoundLazy = lazy(() => import("./pages/NotFound"));
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NoPage />} />
+        <Route path="/" element={<HomeLazy />} />
+        <Route path="*" element={<NotFoundLazy />} status={404}/>
       </Routes>
     </BrowserRouter>
   );
