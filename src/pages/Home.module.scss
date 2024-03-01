@@ -1,5 +1,5 @@
 // scale = 1-(z translate / perspective)
-@import '../mixins';
+@import "../mixins";
 
 $perspective: 300;
 
@@ -53,17 +53,17 @@ $perspective: 300;
           font-size: 0.85em;
           color: #6e6a86;
         }
-  
+
         .link {
           font-family: SymbolsNerdFontMono;
           font-size: 2em;
           margin-top: 1.5em;
           cursor: pointer;
-  
+
           -webkit-user-select: none;
           -ms-user-select: none;
           user-select: none;
-  
+
           &:hover {
             color: #c4a7e7;
           }

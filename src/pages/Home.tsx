@@ -8,9 +8,9 @@ function Home() {
         <div className={styles.parallax_group}>
           <div className={styles.parallax_layer} id={styles.layer1}>
             <div className={styles.container}>
-            <p>Intro screen</p>
-            <p className={styles.smoltext}>&lt;!-- Work in progress --&gt;</p>
-            <Link to="main" smooth={true} duration={1400} containerId="parallax_wrapper" className={styles.link}></Link>
+              <p>Intro screen</p>
+              <p className={styles.smoltext}>&lt;!-- Work in progress --&gt;</p>
+              <Link to="main" smooth={true} duration={1400} containerId="parallax_wrapper" className={styles.link}></Link>
             </div>
           </div>
           <div className={styles.parallax_layer} id={styles.layer2} />

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import './mixins';
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import "./mixins";
 
 @font-face {
   font-family: SymbolsNerdFontMono;
@@ -10,10 +10,10 @@
   font-family: "JetBrains mono", monospace;
   line-height: 1.5;
   font-weight: 400;
-  
+
   color: #e0def4;
   background-color: #191724;
-  
+
   overflow-x: hidden;
 }
 

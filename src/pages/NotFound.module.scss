@@ -1,4 +1,4 @@
-@import '../mixins';
+@import "../mixins";
 
 .main {
   display: flex;
@@ -42,7 +42,7 @@
       cubic-bezier(0.075, 0.82, 0.165, 1) border-color 0.5s,
       color 0.5s,
       transform 0.5s;
-      
+
     &:hover {
       border-color: #26233a;
       color: #e0def4;
