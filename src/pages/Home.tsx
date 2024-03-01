@@ -1,5 +1,6 @@
 import styles from './Home.module.scss';
 import { Link, Element } from 'react-scroll';
+import { GoTriangleDown } from "react-icons/go";
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
             <div className={styles.container}>
               <p>Intro screen</p>
               <p className={styles.smoltext}>&lt;!-- Work in progress --&gt;</p>
-              <Link to="main" smooth={true} duration={1400} containerId="parallax_wrapper" className={styles.link}></Link>
+              <Link to="main" smooth={true} duration={1400} containerId="parallax_wrapper" className={styles.link}><GoTriangleDown /></Link>
             </div>
           </div>
           <div className={styles.parallax_layer} id={styles.layer2} />

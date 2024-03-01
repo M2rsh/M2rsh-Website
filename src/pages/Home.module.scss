@@ -55,10 +55,13 @@ $perspective: 300;
         }
 
         .link {
-          font-family: SymbolsNerdFontMono;
-          font-size: 2em;
-          margin-top: 1.5em;
+          font-size: 3em;
+          margin-top: 1em;
           cursor: pointer;
+
+          transition:
+            cubic-bezier(0.075, 0.82, 0.165, 1) color 0.5s,
+            transform 0.5s;
 
           -webkit-user-select: none;
           -ms-user-select: none;
@@ -66,6 +69,10 @@ $perspective: 300;
 
           &:hover {
             color: #c4a7e7;
+          }
+
+          &:active {
+            transform: scale(0.95);
           }
         }
       }
