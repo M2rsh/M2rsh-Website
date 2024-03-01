@@ -80,7 +80,7 @@ $perspective: 300;
 
     #layer2 {
       background-color: #eb6f92;
-      transform: translateZ(145px) scale(calc(1 - (145 / $perspective)));
+      transform: translateZ(150px) scale(calc(1 - (150 / $perspective)));
       z-index: 5;
     }
 
@@ -92,25 +92,25 @@ $perspective: 300;
 
     #layer4 {
       background-color: #ea9a97;
-      transform: translateZ(95px) scale(calc(1 - (95 / $perspective)));
+      transform: translateZ(90px) scale(calc(1 - (90 / $perspective)));
       z-index: 3;
     }
 
     #layer5 {
       background-color: #f6c177;
-      transform: translateZ(70px) scale(calc(1 - (70 / $perspective)));
+      transform: translateZ(60px) scale(calc(1 - (60 / $perspective)));
       z-index: 2;
     }
 
     #layer6 {
       background-color: #286983;
-      transform: translateZ(45px) scale(calc(1 - (45 / $perspective)));
+      transform: translateZ(30px) scale(calc(1 - (30 / $perspective)));
       z-index: 1;
     }
 
     #layer7 {
       background-color: #907aa9;
-      transform: translateZ(20px) scale(calc(1 - (20 / $perspective)));
+      //transform: translateZ(0px) scale(calc(1 - (0 / $perspective)));
     }
   }
 }
