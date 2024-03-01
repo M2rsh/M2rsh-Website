@@ -1,4 +1,5 @@
 // scale = 1-(z translate / perspective)
+@import '../mixins';
 
 $perspective: 300;
 
@@ -24,11 +25,11 @@ $perspective: 300;
     transform-style: preserve-3d;
     height: 100vh;
     width: 100vw;
-    
+
     .parallax_layer {
       position: absolute;
       inset: 0;
-      height: 95vh;
+      height: 100vh;
     }
 
     #layer1 {
@@ -36,21 +37,36 @@ $perspective: 300;
       transform: translateZ(180px) scale(calc(1 - (180 / $perspective)));
       @include align-center;
       z-index: 6;
-      padding-top: 30px;
+      //padding-top: 30px;
 
-      .smoltext {
-        font-size: 0.85em;
-        color: #6e6a86;
-      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-      .link {
-        font-family: SymbolsNerdFontMono;
-        font-size: 2em;
-        margin-top: 1.5em;
-        cursor: pointer;
+        @include mobile {
+          transform: translateY(-30%);
+        }
 
-        &:hover {
-          color: #c4a7e7;
+        .smoltext {
+          font-size: 0.85em;
+          color: #6e6a86;
+        }
+  
+        .link {
+          font-family: SymbolsNerdFontMono;
+          font-size: 2em;
+          margin-top: 1.5em;
+          cursor: pointer;
+  
+          -webkit-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+  
+          &:hover {
+            color: #c4a7e7;
+          }
         }
       }
     }
@@ -72,7 +88,7 @@ $perspective: 300;
       transform: translateZ(95px) scale(calc(1 - (95 / $perspective)));
       z-index: 3;
     }
-    
+
     #layer5 {
       background-color: #f6c177;
       transform: translateZ(70px) scale(calc(1 - (70 / $perspective)));
@@ -88,14 +104,15 @@ $perspective: 300;
     #layer7 {
       background-color: #907aa9;
       transform: translateZ(20px) scale(calc(1 - (20 / $perspective)));
-      z-index: 0;
     }
   }
 }
 
 .main {
+  position: relative;
   min-height: 100vh;
-  
+  background-color: #191724;
+
   .container {
     display: flex;
     flex-direction: column;
