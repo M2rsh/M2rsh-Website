@@ -12,7 +12,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomeLazy />} />
-        <Route path="*" element={<NotFoundLazy />} status={404}/>
+        <Route path="*" element={<NotFoundLazy />} />
       </Routes>
     </BrowserRouter>
   );
