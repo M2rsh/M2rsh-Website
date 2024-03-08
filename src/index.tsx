@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { lazy } from 'react';
+import { lazy } from "react";
 
-import './index.scss';
+import "./index.scss";
 
 const HomeLazy = lazy(() => import("./pages/Home"));
 const NotFoundLazy = lazy(() => import("./pages/NotFound"));
@@ -18,6 +18,4 @@ export default function App() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <App />
-)
+ReactDOM.createRoot(document.getElementById("root")!).render(<App />);

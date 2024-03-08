@@ -22,6 +22,20 @@
   padding: 0;
 }
 
+a {
+  text-decoration: dashed underline;
+  color: #c4a7e7;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) color 0.5s;
+
+  &:hover {
+    color: #ebbcba;
+  }
+
+  svg {
+    vertical-align: middle;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }

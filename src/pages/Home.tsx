@@ -1,6 +1,6 @@
 import styles from './Home.module.scss';
 import { Link, Element } from 'react-scroll';
-import { AiFillCaretDown } from "react-icons/ai";
+import { AiFillCaretDown, AiOutlineLink } from "react-icons/ai";
 
 function Home() {
   return (
@@ -37,6 +37,12 @@ function Home() {
               <p>Turpis massa sed elementum tempus egestas. Eros donec ac odio tempor orci dapibus. Feugiat vivamus at augue eget arcu dictum varius duis at. Ut etiam sit amet nisl purus in. Nec ultrices dui sapien eget mi proin. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Sit amet venenatis urna cursus. Purus non enim praesent elementum facilisis leo vel fringilla. In hac habitasse platea dictumst vestibulum. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Eget felis eget nunc lobortis mattis. Quam quisque id diam vel quam.</p>
               <br />
               <p>Pulvinar mattis nunc sed blandit libero. Quam viverra orci sagittis eu volutpat odio facilisis mauris. Risus ultricies tristique nulla aliquet enim tortor at. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Nunc id cursus metus aliquam eleifend mi. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra. Consectetur purus ut faucibus pulvinar elementum. Aenean et tortor at risus viverra. Cursus mattis molestie a iaculis at erat. Erat velit scelerisque in dictum non. Eget duis at tellus at urna condimentum mattis pellentesque id. Vitae nunc sed velit dignissim. Nullam ac tortor vitae purus faucibus. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Viverra adipiscing at in tellus integer feugiat. Dignissim suspendisse in est ante in nibh. Pulvinar sapien et ligula ullamcorper. Augue neque gravida in fermentum et sollicitudin ac orci.</p>
+              <br />
+              <div className={styles.links}>
+                <a href="https://github.com/M2rsh" target="_blank" rel="noopener noreferrer"><AiOutlineLink />Github</a>
+                <a href="https://github.com/M2rsh/Website" target="_blank" rel="noopener noreferrer"><AiOutlineLink />Source</a>
+                <a href="https://discord.gg/dfKMTx9Eea" target="_blank" rel="noopener noreferrer"><AiOutlineLink />Discord</a>
+              </div>
             </div>
           </div>
         </Element>

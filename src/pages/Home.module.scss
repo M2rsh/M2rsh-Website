@@ -53,7 +53,6 @@ $perspective: 300;
           font-size: 0.85em;
           color: #6e6a86;
         }
-
         .link {
           font-size: 2.4em;
           margin-top: 1em;
@@ -124,10 +123,17 @@ $perspective: 300;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     .text_container {
       width: 80vw;
       margin-block: 50px;
       padding-bottom: 50px;
+
+      .links {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+      }
     }
   }
 }
