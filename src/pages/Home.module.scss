@@ -36,7 +36,7 @@ $perspective: 300;
       background-color: #1f1d2e;
       transform: translateZ(180px) scale(calc(1 - (180 / $perspective)));
       @include align-center;
-      z-index: 6;
+      z-index: 7;
       //padding-top: 30px;
 
       .container {
@@ -78,38 +78,43 @@ $perspective: 300;
     }
 
     #layer2 {
-      background-color: #eb6f92;
-      transform: translateZ(150px) scale(calc(1 - (150 / $perspective)));
-      z-index: 5;
+      background-color: #D52D00;
+      transform: translateZ(154.2px) scale(calc(1 - (154.2 / $perspective)));
+      z-index: 6;
     }
 
     #layer3 {
-      background-color: #b4637a;
-      transform: translateZ(120px) scale(calc(1 - (120 / $perspective)));
-      z-index: 4;
+      background-color: #EF7627;
+      transform: translateZ(128.5px) scale(calc(1 - (128.5 / $perspective)));
+      z-index: 5;
     }
 
     #layer4 {
-      background-color: #ea9a97;
-      transform: translateZ(90px) scale(calc(1 - (90 / $perspective)));
-      z-index: 3;
+      background-color: #FF9A56;
+      transform: translateZ(102.8px) scale(calc(1 - (102.8 / $perspective)));
+      z-index: 4;
     }
 
     #layer5 {
-      background-color: #f6c177;
-      transform: translateZ(60px) scale(calc(1 - (60 / $perspective)));
-      z-index: 2;
+      background-color: #ffffff;
+      transform: translateZ(77.1px) scale(calc(1 - (77.1 / $perspective)));
+      z-index: 3;
     }
 
     #layer6 {
-      background-color: #286983;
-      transform: translateZ(30px) scale(calc(1 - (30 / $perspective)));
-      z-index: 1;
+      background-color: #D162A4;
+      transform: translateZ(51.4px) scale(calc(1 - (51.4 / $perspective)));
+      z-index: 2;
     }
 
     #layer7 {
-      background-color: #907aa9;
-      //transform: translateZ(0px) scale(calc(1 - (0 / $perspective)));
+      background-color: #B55690;
+      transform: translateZ(25.7px) scale(calc(1 - (25.7 / $perspective)));
+      z-index: 1;
+    }
+
+    #layer8 {
+      background-color: #A30262;
     }
   }
 }

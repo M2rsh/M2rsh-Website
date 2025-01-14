@@ -20,6 +20,7 @@ function Home() {
           <div className={styles.parallax_layer} id={styles.layer5} />
           <div className={styles.parallax_layer} id={styles.layer6} />
           <div className={styles.parallax_layer} id={styles.layer7} />
+          <div className={styles.parallax_layer} id={styles.layer8} />
         </div>
         <Element name="main" className={`${styles.parallax_layer} ${styles.main}`}>
           <div className={styles.container}>
